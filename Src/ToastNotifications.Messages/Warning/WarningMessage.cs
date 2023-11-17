@@ -22,7 +22,9 @@ namespace ToastNotifications.Messages.Warning
         protected override void UpdateDisplayOptions(WarningDisplayPart displayPart, MessageOptions options)
         {
             if (options.FontSize != null)
+            {
                 displayPart.Text.FontSize = options.FontSize.Value;
+            }
 
             displayPart.CloseButton.Visibility = options.ShowCloseButton ? Visibility.Visible : Visibility.Collapsed;
         }

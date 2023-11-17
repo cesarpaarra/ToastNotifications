@@ -22,7 +22,9 @@ namespace ToastNotifications.Messages.Success
         protected override void UpdateDisplayOptions(SuccessDisplayPart displayPart, MessageOptions options)
         {
             if (options.FontSize != null)
-                displayPart.Text.FontSize = options.FontSize.Value;
+            {
+                displayPart.FontSize = options.FontSize.Value;
+            }
 
             displayPart.CloseButton.Visibility = options.ShowCloseButton ? Visibility.Visible : Visibility.Collapsed;
         }

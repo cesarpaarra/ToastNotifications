@@ -11,7 +11,6 @@ namespace ToastNotifications.Messages.Warning
         public WarningDisplayPart(WarningMessage warning)
         {
             InitializeComponent();
-
             Bind(warning);
         }
 

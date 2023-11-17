@@ -11,7 +11,6 @@ namespace ToastNotifications.Messages.Success
         public SuccessDisplayPart(SuccessMessage success)
         {
             InitializeComponent();
-
             Bind(success);
         }
 
