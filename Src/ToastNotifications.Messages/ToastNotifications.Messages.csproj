@@ -8,7 +8,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\CloseIcon.png" />
+    <None Remove="Images\ErrorIcon.png" />
+    <None Remove="Images\InfoIcon.png" />
+    <None Remove="Images\SuccessIcon.png" />
+    <None Remove="Images\WarningIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\CloseIcon.png" />
+    <Resource Include="Images\ErrorIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ToastNotifications\ToastNotifications.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\InfoIcon.png" />
+    <Resource Include="Images\SuccessIcon.png" />
+    <Resource Include="Images\WarningIcon.png" />
   </ItemGroup>
 
 </Project>

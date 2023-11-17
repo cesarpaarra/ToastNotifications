@@ -78,18 +78,11 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="20" />
             </Grid.ColumnDefinitions>
-            <Rectangle x:Name="Icon" Width="24" Height="24">
-                <Rectangle.Fill>
-                    <VisualBrush Visual="{StaticResource InformationIcon}" />
-                </Rectangle.Fill>
-            </Rectangle>
+            <Image x:Name="Icon" Width="28" Source="pack://application:,,,/ToastNotifications.Messages;component/Images/InfoIcon.png" Grid.Column="0" />
+
             <TextBlock x:Name="Text" Text="{Binding Message, Mode=OneTime}" Style="{StaticResource NotificationText}" Grid.Column="1"  />
-            <Button x:Name="CloseButton" Style="{StaticResource NotificationCloseButton}"  Padding="1" Grid.Column="2" Click="OnClose" Visibility="Hidden">
-                <Rectangle Style="{StaticResource CloseButtonIcon}" Margin="2">
-                    <Rectangle.OpacityMask>
-                        <VisualBrush Stretch="Fill" Visual="{StaticResource CloseIcon}" />
-                    </Rectangle.OpacityMask>
-                </Rectangle>
+            <Button x:Name="CloseButton" Style="{StaticResource NotificationCloseButton}" Padding="1" Grid.Column="2" Click="OnClose" Visibility="Hidden">
+                <Image Width="10" Height="10" Source="pack://application:,,,/ToastNotifications.Messages;component/Images/CloseIcon.png" Margin="2"/>
             </Button>
         </Grid>
     </Border>

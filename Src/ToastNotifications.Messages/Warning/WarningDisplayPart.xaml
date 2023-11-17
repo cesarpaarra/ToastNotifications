@@ -76,20 +76,14 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="40" />
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="13.087" />
+                <ColumnDefinition Width="6.913"/>
             </Grid.ColumnDefinitions>
-            <Rectangle x:Name="Icon" Height="25" Width="28">
-                <Rectangle.Fill>
-                    <VisualBrush Visual="{StaticResource WarningIcon}" />
-                </Rectangle.Fill>
-            </Rectangle>
-            <TextBlock x:Name="Text" Text="{Binding Message, Mode=OneTime}" Style="{StaticResource NotificationText}" Grid.Column="1"  />
-            <Button x:Name="CloseButton" Style="{StaticResource NotificationCloseButton}"  Padding="1" Grid.Column="2" Click="OnClose" Visibility="Hidden">
-                <Rectangle Style="{StaticResource CloseButtonIcon}" Margin="2">
-                    <Rectangle.OpacityMask>
-                        <VisualBrush Stretch="Fill" Visual="{StaticResource CloseIcon}" />
-                    </Rectangle.OpacityMask>
-                </Rectangle>
+            <Image x:Name="Icon" Width="28" Source="pack://application:,,,/ToastNotifications.Messages;component/Images/WarningIcon.png" Grid.Column="0" />
+
+            <TextBlock x:Name="Text" Text="{Binding Message, Mode=OneTime}" Style="{StaticResource NotificationText}" Grid.Column="1" Margin="5,0,0,0"  />
+            <Button x:Name="CloseButton" Style="{StaticResource NotificationCloseButton}" Padding="1" Grid.Column="2" Click="OnClose" Visibility="Hidden" Grid.ColumnSpan="2">
+                <Image Width="10" Height="10" Source="pack://application:,,,/ToastNotifications.Messages;component/Images/CloseIcon.png" Margin="2"/>
             </Button>
         </Grid>
     </Border>
