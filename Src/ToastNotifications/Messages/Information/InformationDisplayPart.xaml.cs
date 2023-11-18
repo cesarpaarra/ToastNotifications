@@ -8,10 +8,10 @@ namespace ToastNotifications.Messages.Information
     /// </summary>
     public partial class InformationDisplayPart : NotificationDisplayPart
     {
-        public InformationDisplayPart(InformationMessage information, MessageOptions options)
+        public InformationDisplayPart(InformationMessage Information)
         {
             InitializeComponent();
-            Bind(information);
+            Bind(Information);
         }
 
         private void OnClose(object sender, RoutedEventArgs e)

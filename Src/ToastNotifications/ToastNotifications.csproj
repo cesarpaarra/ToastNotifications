@@ -13,6 +13,13 @@
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Messages\Images\CloseIcon.png" />
+    <None Remove="Messages\Images\ErrorIcon.png" />
+    <None Remove="Messages\Images\InformationIcon.png" />
+    <None Remove="Messages\Images\SuccessIcon.png" />
+    <None Remove="Messages\Images\WarningIcon.png" />
+  </ItemGroup>
   <!--<PropertyGroup Condition="('$(Configuration)' == 'Release') And ('$(UseTemporarySignCert)' != 'true')">
     <AssemblyOriginatorKeyFile>../../Build/DevCrew.ToastNotifications.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
@@ -23,6 +30,11 @@
     <None Include="DevCrew.ToastNotifications.pfx" />
   </ItemGroup>-->
   <ItemGroup>
+    <Resource Include="Messages\Images\CloseIcon.png" />
+    <Resource Include="Messages\Images\ErrorIcon.png" />
+    <Resource Include="Messages\Images\InformationIcon.png" />
+    <Resource Include="Messages\Images\SuccessIcon.png" />
+    <Resource Include="Messages\Images\WarningIcon.png" />
     <Resource Include="toast-notifications-icon.ico" />
   </ItemGroup>
   <ItemGroup>

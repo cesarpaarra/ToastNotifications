@@ -7,8 +7,8 @@ namespace ToastNotifications.Messages.Core
     public abstract class MessageBase<TDisplayPart> : NotificationBase where TDisplayPart : NotificationDisplayPart
     {
         private NotificationDisplayPart _displayPart;
-        
-        protected MessageBase(string message, MessageOptions options): base(message, options)
+
+        protected MessageBase(string message, MessageOptions options) : base(message, options)
         {
         }
 

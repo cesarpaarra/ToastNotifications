@@ -3,10 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:core="clr-namespace:ToastNotifications.Core;assembly=ToastNotifications"
+             xmlns:core="clr-namespace:ToastNotifications.Core"
              xmlns:options="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
              mc:Ignorable="d" d:DesignWidth="250">
     <UserControl.Resources>
+        <BitmapImage x:Key="SuccessIconImage" UriSource="pack://application:,,,/ToastNotifications;component/Messages/Images/SuccessIcon.png"/>
+        <BitmapImage x:Key="CloseIconImage" UriSource="pack://application:,,,/ToastNotifications;component/Messages/Images/CloseIcon.png"/>
+
         <Color x:Key="SuccessColor">#11ad45</Color>
         <SolidColorBrush x:Key="SuccessColorBrush" Color="{StaticResource SuccessColor}" options:Freeze="True" />
 
@@ -79,11 +82,11 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="20" />
             </Grid.ColumnDefinitions>
-            <Image x:Name="Icon" Width="28" Source="pack://application:,,,/ToastNotifications.Messages;component/Images/SuccessIcon.png" Grid.Column="0" />
+            <Image x:Name="Icon" Width="28" Source="{StaticResource SuccessIconImage}" Grid.Column="0" />
 
             <TextBlock x:Name="Text" Text="{Binding Message, Mode=OneTime}" Style="{StaticResource NotificationText}" Grid.Column="1"  />
-            <Button x:Name="CloseButton" Style="{StaticResource NotificationCloseButton}"  Padding="1" Grid.Column="2" Click="OnClose" Visibility="Hidden">
-                <Image Width="10" Height="10" Source="pack://application:,,,/ToastNotifications.Messages;component/Images/CloseIcon.png" Margin="2"/>
+            <Button x:Name="CloseButton" Style="{StaticResource NotificationCloseButton}" Padding="1" Grid.Column="2" Click="OnClose" Visibility="Hidden">
+                <Image Width="10" Height="10" Source="{StaticResource CloseIconImage}" Margin="2"/>
             </Button>
         </Grid>
     </Border>
