@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows7.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>toastify.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Messages\Font\Nunito.ttf" />
+    <None Remove="Messages\Images\CloseIcon.png" />
+    <None Remove="Messages\Images\ErrorIcon.png" />
+    <None Remove="Messages\Images\InformationIcon.png" />
+    <None Remove="Messages\Images\SuccessIcon.png" />
+    <None Remove="Messages\Images\WarningIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="toastify.ico" />
+  </ItemGroup>
+  <!--<PropertyGroup Condition="('$(Configuration)' == 'Release') And ('$(UseTemporarySignCert)' != 'true')">
+    <AssemblyOriginatorKeyFile>../../Build/DevCrew.Toastify.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="('$(Configuration)' == 'Debug') Or ('$(UseTemporarySignCert)' == 'true')">
+    <AssemblyOriginatorKeyFile>../../Build/DevCrew.Toastify_TemporaryKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>-->
+  <!--<ItemGroup>
+    <None Include="DevCrew.Toastify.pfx" />
+  </ItemGroup>-->
+  <ItemGroup>
+    <Resource Include="Messages\Font\Nunito.ttf" />
+    <Resource Include="Messages\Images\CloseIcon.png" />
+    <Resource Include="Messages\Images\ErrorIcon.png" />
+    <Resource Include="Messages\Images\InformationIcon.png" />
+    <Resource Include="Messages\Images\SuccessIcon.png" />
+    <Resource Include="Messages\Images\WarningIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+  </ItemGroup>
+</Project>

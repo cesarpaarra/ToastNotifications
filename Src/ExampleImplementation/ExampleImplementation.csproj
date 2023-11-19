@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ToastNotifications\ToastNotifications.csproj" />
+    <ProjectReference Include="..\Toastify\Toastify.csproj" />
   </ItemGroup>
 
 </Project>

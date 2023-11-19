@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <description>
+		Toastify allows you to create and display notifications in WPF applications.
+	</description>
+    <summary>Toast notifications for WPF .NET 8</summary>
+    <releaseNotes>
+		Find out more at:
+		https://github.com/cesarpaarra/Toastify/blob/master/Docs/ReleaseNotes.md
+    </releaseNotes>
+    <language>en-US</language>
+    <licenseUrl>https://github.com/cesarpaarra/Toastify/blob/master/license</licenseUrl>
+    <projectUrl>https://github.com/cesarpaarra/Toastify</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/cesarpaarra/Toastify/master/Media/project-icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Copyright © César Parra 2018</copyright>
+    <references></references>
+    <tags>WPF notifications, Toast notifications, XAML notifications, c# notifications, UI notifications, Toastify, Toastify, toasts, messages, notifications, WPF, XAML, UI, notify, message, toast, .NET 8, Toast notifications .NET 8, .NET 8.0</tags>
+  </metadata>
+    <files>
+      <file src="readme.txt" target="" />
+   </files>
+</package>

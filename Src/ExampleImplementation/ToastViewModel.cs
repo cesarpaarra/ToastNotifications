@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel;
 using System.Windows;
-using ToastNotifications;
-using ToastNotifications.Core;
-using ToastNotifications.Lifetime;
-using ToastNotifications.Messages;
-using ToastNotifications.Position;
+using Toastify;
+using Toastify.Core;
+using Toastify.Lifetime;
+using Toastify.Messages;
+using Toastify.Position;
 
 namespace ExampleImplementation
 {
