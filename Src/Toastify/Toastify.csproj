@@ -10,9 +10,21 @@
   <PropertyGroup>
     <ApplicationIcon>toastify.ico</ApplicationIcon>
   </PropertyGroup>
+    <PropertyGroup>
+	    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    </PropertyGroup>
+    <ItemGroup>
+	    <None Include="LICENSE.txt" Pack="true" PackagePath=""/>
+    </ItemGroup>
+	<PropertyGroup>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
+  <ItemGroup>
+	<None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
   <ItemGroup>
     <None Remove="Messages\Font\Nunito.ttf" />
     <None Remove="Messages\Images\CloseIcon.png" />
@@ -24,15 +36,6 @@
   <ItemGroup>
     <Resource Include="toastify.ico" />
   </ItemGroup>
-  <!--<PropertyGroup Condition="('$(Configuration)' == 'Release') And ('$(UseTemporarySignCert)' != 'true')">
-    <AssemblyOriginatorKeyFile>../../Build/DevCrew.Toastify.pfx</AssemblyOriginatorKeyFile>
-  </PropertyGroup>
-  <PropertyGroup Condition="('$(Configuration)' == 'Debug') Or ('$(UseTemporarySignCert)' == 'true')">
-    <AssemblyOriginatorKeyFile>../../Build/DevCrew.Toastify_TemporaryKey.snk</AssemblyOriginatorKeyFile>
-  </PropertyGroup>-->
-  <!--<ItemGroup>
-    <None Include="DevCrew.Toastify.pfx" />
-  </ItemGroup>-->
   <ItemGroup>
     <Resource Include="Messages\Font\Nunito.ttf" />
     <Resource Include="Messages\Images\CloseIcon.png" />
