@@ -7,21 +7,21 @@
     <authors>$author$</authors>
     <owners>$author$</owners>
     <description>
-		ToastNotifications allows you to create and display notifications in WPF applications.
+		Toastify allows you to create and display notifications in WPF applications.
 	</description>
     <summary>Toast notifications for WPF .NET 8</summary>
     <releaseNotes>
 		Find out more at:
-		https://github.com/cesarpaarra/ToastNotifications/blob/master/Docs/ReleaseNotes.md
+		https://github.com/cesarpaarra/Toastify/blob/master/Docs/ReleaseNotes.md
     </releaseNotes>
     <language>en-US</language>
-    <licenseUrl>https://github.com/cesarpaarra/ToastNotifications/blob/master/license</licenseUrl>
-    <projectUrl>https://github.com/cesarpaarra/ToastNotifications</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/cesarpaarra/ToastNotifications/master-v2/Media/project-icon.png</iconUrl>
+    <licenseUrl>https://github.com/cesarpaarra/Toastify/blob/master/license</licenseUrl>
+    <projectUrl>https://github.com/cesarpaarra/Toastify</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/cesarpaarra/Toastify/master/Media/project-icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <copyright>Copyright © César Parra 2018</copyright>
     <references></references>
-    <tags>WPF notifications, Toast notifications, XAML notifications, c# notifications, UI notifications, ToastNotifications, toasts, messages, notifications, WPF, XAML, UI, notify, message, toast, .NET 8, Toast notifications .NET 8, .NET 8.0</tags>
+    <tags>WPF notifications, Toast notifications, XAML notifications, c# notifications, UI notifications, Toastify, ToastNotifications, toasts, messages, notifications, WPF, XAML, UI, notify, message, toast, .NET 8, Toast notifications .NET 8, .NET 8.0</tags>
   </metadata>
     <files>
       <file src="readme.txt" target="" />

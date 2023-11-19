@@ -4,6 +4,8 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToastNotifications", "ToastNotifications\ToastNotifications.csproj", "{4A8879FC-9A6E-4904-910B-5C13FA5ED5BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleImplementation", "ExampleImplementation\ExampleImplementation.csproj", "{FA8AD82C-81BD-425A-842E-DEF334D9B20A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,6 +16,10 @@ Global
 		{4A8879FC-9A6E-4904-910B-5C13FA5ED5BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A8879FC-9A6E-4904-910B-5C13FA5ED5BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A8879FC-9A6E-4904-910B-5C13FA5ED5BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA8AD82C-81BD-425A-842E-DEF334D9B20A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA8AD82C-81BD-425A-842E-DEF334D9B20A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA8AD82C-81BD-425A-842E-DEF334D9B20A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA8AD82C-81BD-425A-842E-DEF334D9B20A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

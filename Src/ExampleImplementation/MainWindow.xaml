@@ -1,0 +1,23 @@
+﻿<Window x:Class="ExampleImplementation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExampleImplementation"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="MainWindow" Height="800" Width="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+            <RowDefinition Height="75" />
+            <RowDefinition Height="75" />
+            <RowDefinition Height="75" />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="SuccessButton" Margin="15" Width="150" Background="LimeGreen" Foreground="White" Content="Success" Grid.Row="0" Click="SuccessButton_Click"/>
+        <Button x:Name="WarningButton" Margin="15" Width="150" Background="Orange" Foreground="White" Content="Warning" Grid.Row="1" Click="WarningButton_Click"/>
+        <Button x:Name="ErrorButton" Margin="15" Width="150" Background="Red" Foreground="White" Content="Error" Grid.Row="2" Click="ErrorButton_Click"/>
+        <Button x:Name="InformationButton" Margin="15" Width="150" Background="DeepSkyBlue" Foreground="White" Content="Infomation" Grid.Row="3" Click="InformationButton_Click"/>
+    </Grid>
+</Window>

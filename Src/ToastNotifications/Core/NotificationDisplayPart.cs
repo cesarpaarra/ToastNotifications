@@ -29,7 +29,7 @@ namespace ToastNotifications.Core
             var options = Notification.Options;
             if (options != null && options.FreezeOnMouseEnter)
             {
-                if (!options.UnfreezeOnMouseLeave) // message stay freezed, show close button
+                if (!options.UnfreezeOnMouseLeave)
                 {
                     var bord2 = Content as Border;
                     if (bord2 != null)
