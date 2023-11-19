@@ -40,6 +40,7 @@
             <Setter Property="HorizontalAlignment" Value="Stretch" />
             <Setter Property="TextWrapping" Value="Wrap" />
             <Setter Property="Margin" Value="5,0,0,0" />
+            <Setter Property="FontFamily" Value="pack://application:,,,/ToastNotifications;component/Messages/Font/Nunito.ttf#Nunito SemiBold"/>
         </Style>
 
         <Style TargetType="{x:Type Button}" x:Key="NotificationCloseButton">

@@ -8,20 +8,10 @@
 
 ==================================================================================================================================================================================================================
 
-Thanks for installing ToastNotifications For .NET 8!
+Thanks for installing ToastNotifications!
 
 ToastNotifications allows you to create and display notifications in WPF applications.
 
 Follow instructons on https://github.com/cesarpaarra/ToastNotifications to setup ToastNotifications.
-
-==================================================================================================================================================================================================================
-
-ToastNotifications v2 is plugin oriented.
-
-Nugget "ToastNotifications" is a core, which contains only main mechanisms for creating and displaying notifications.
-Predefined messages and other not key functionalities are provided by separate nuggets.
-
-Availaible nuggets:
-	"ToastNotifications.Messages" - contains basic messages like error, information, warning, success.
 
 ==================================================================================================================================================================================================================

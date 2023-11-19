@@ -14,6 +14,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Messages\Font\Nunito.ttf" />
     <None Remove="Messages\Images\CloseIcon.png" />
     <None Remove="Messages\Images\ErrorIcon.png" />
     <None Remove="Messages\Images\InformationIcon.png" />
@@ -30,6 +31,7 @@
     <None Include="DevCrew.ToastNotifications.pfx" />
   </ItemGroup>-->
   <ItemGroup>
+    <Resource Include="Messages\Font\Nunito.ttf" />
     <Resource Include="Messages\Images\CloseIcon.png" />
     <Resource Include="Messages\Images\ErrorIcon.png" />
     <Resource Include="Messages\Images\InformationIcon.png" />
