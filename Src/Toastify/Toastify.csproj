@@ -6,6 +6,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <UseWPF>true</UseWPF>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+	<Version>1.0.1</Version>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>toastify.ico</ApplicationIcon>
