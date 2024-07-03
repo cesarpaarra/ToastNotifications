@@ -83,8 +83,15 @@
                 <ColumnDefinition Width="13.087" />
                 <ColumnDefinition Width="6.913"/>
             </Grid.ColumnDefinitions>
-            <Image x:Name="Icon" Width="28" Source="{StaticResource WarningIconImage}" Grid.Column="0" />
-
+            <Path Data="M 100.8724,36.166268 A 28.357471,28.357471 0 0 0 72.514954,64.52371 28.357471,28.357471 0 0 0 100.8724,92.881152 28.357471,28.357471 0 0 0 129.22984,64.52371 28.357471,28.357471 0 0 0 100.8724,36.166268 Z m 0,4.931482 A 23.425737,23.425737 0 0 1 124.29784,64.52371 23.425737,23.425737 0 0 1 100.8724,87.949154 23.425737,23.425737 0 0 1 77.446436,64.52371 23.425737,23.425737 0 0 1 100.8724,41.09775 Z m 0.093,8.899715 c -1.394355,0 -2.517156,1.122801 -2.517156,2.517159 v 14.414624 c 0,1.394358 1.122801,2.517159 2.517156,2.517159 1.39436,0 2.51665,-1.122801 2.51665,-2.517159 V 52.514624 c 0,-1.394358 -1.12229,-2.517159 -2.51665,-2.517159 z m 0.0682,22.330937 a 2.550868,2.550868 0 0 0 -2.550752,2.550748 2.550868,2.550868 0 0 0 2.550752,2.550749 2.550868,2.550868 0 0 0 2.55074,-2.550749 2.550868,2.550868 0 0 0 -2.55074,-2.550748 z"
+                  x:Name="Icon"
+                  Grid.Column="0"
+                  Fill="White"
+                  Stretch="Fill"
+                  Width="28"
+                  Height="28">
+            </Path>
+            
             <TextBlock x:Name="Text" Text="{Binding Message, Mode=OneTime}" Style="{StaticResource NotificationText}" Grid.Column="1" Margin="5,0,0,0"  />
             <Button x:Name="CloseButton" Style="{StaticResource NotificationCloseButton}" Padding="1" Grid.Column="2" Click="OnClose" Visibility="Hidden" Grid.ColumnSpan="2">
                 <Image Width="10" Height="10" Source="{StaticResource CloseIconImage}" Margin="2"/>

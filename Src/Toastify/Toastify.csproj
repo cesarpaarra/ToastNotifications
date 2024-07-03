@@ -6,7 +6,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <UseWPF>true</UseWPF>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
-	<Version>1.1.0</Version>
+	<Version>1.2.0</Version>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>toastify.ico</ApplicationIcon>
@@ -33,14 +33,9 @@
     <None Remove="Messages\Images\InformationIcon.png" />
     <None Remove="Messages\Images\SuccessIcon.png" />
     <None Remove="Messages\Images\WarningIcon.png" />
+    <None Remove="toastify.ico" />
     <None Remove="Toastify.nuspec" />
   </ItemGroup>
-	<ItemGroup>
-		<None Update="toastify.ico">
-			<Pack>true</Pack>
-			<PackagePath>content</PackagePath>
-		</None>
-	</ItemGroup>
   <ItemGroup>
     <Resource Include="Messages\Font\Nunito.ttf" />
     <Resource Include="Messages\Images\CloseIcon.png" />
@@ -48,6 +43,10 @@
     <Resource Include="Messages\Images\InformationIcon.png" />
     <Resource Include="Messages\Images\SuccessIcon.png" />
     <Resource Include="Messages\Images\WarningIcon.png" />
+    <Resource Include="toastify.ico">
+      <Pack>true</Pack>
+      <PackagePath>content</PackagePath>
+    </Resource>
     <Resource Include="Toastify.nuspec" />
   </ItemGroup>
   <ItemGroup>
