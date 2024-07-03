@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Input;
 using Toastify.Core;
 using Toastify.Messages.Core;
 
@@ -27,7 +28,16 @@ namespace Toastify.Messages.Error
                 displayPart.FontSize = options.FontSize.Value;
             }
 
-            displayPart.CloseButton.Visibility = options.ShowCloseButton ? Visibility.Visible : Visibility.Collapsed;
+            if (options.ShowCloseButton)
+            {
+                displayPart.CloseButton.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                displayPart.CloseButton.Visibility = Visibility.Collapsed;
+                displayPart.ContentWrapper.MouseDown += displayPart.ContentWrapper_MouseDown;
+                displayPart.ContentWrapper.Cursor = Cursors.Hand;
+            }
         }
     }
 }

@@ -6,7 +6,7 @@ namespace Toastify.Core
     {
         public double? FontSize { get; set; }
 
-        public bool ShowCloseButton { get; set; } = true;
+        public bool ShowCloseButton { get; set; } = false;
 
         public object Tag { get; set; }
 
@@ -15,6 +15,7 @@ namespace Toastify.Core
         public Action<NotificationBase> NotificationClickAction { get; set; }
 
         public Action<NotificationBase> CloseClickAction { get; set; }
-        public bool UnfreezeOnMouseLeave { get; set; } = false;
+
+        public bool UnfreezeOnMouseLeave { get; set; } = true;
     }
 }

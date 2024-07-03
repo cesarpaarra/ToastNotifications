@@ -18,5 +18,10 @@ namespace Toastify.Messages.Information
         {
             Notification.Close();
         }
+
+        public void ContentWrapper_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Notification.Close();
+        }
     }
 }

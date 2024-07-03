@@ -23,4 +23,7 @@
     <references></references>
     <tags>WPF notifications, Toast notifications, XAML notifications, c# notifications, UI notifications, Toastify, Toastify, toasts, messages, notifications, WPF, XAML, UI, notify, message, toast, .NET 8, Toast notifications .NET 8, .NET 8.0</tags>
   </metadata>
+    <files>
+	    <file src="toastify.ico" target="" />
+    </files>
 </package>
